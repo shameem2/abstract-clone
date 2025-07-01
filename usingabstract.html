@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 88px;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            position: relative;
+
+        }
+
+        .divl {
+            width: 40%;
+            font-size: 20px;
+            display: flex;
+            vertical-align: middle;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
+        .divr {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+
+        }
+
+        nav button.btn1 {
+            width: 30%;
+            height: 50px;
+            margin-top: 20px;
+            font-size: 25px;
+            background-color: rgb(37, 36, 36);
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+        }
+
+        nav button.btn2 {
+            width: 15%;
+            height: 50px;
+            margin-top: 20px;
+            font-size: 25px;
+            background-color: #4C5FD5;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+
+        }
+
+        nav input {
+            width: 40%;
+            height: 50px;
+            margin-top: 20px;
+            font-size: 25px;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            outline: none;
+        }
+
+
+        .section1 {
+            height: 350px;
+            width: 100%;
+            background-color: #dadbf1;
+            /* display: flex; */
+            padding-left: 7%;
+            padding-top: 4%;
+            font-family: 'GT America Standard', sans-serif;
+            /* font-style: inherit; */
+            line-height: 70px;
+        }
+
+        section input {
+            width: 90%;
+            height: auto;
+            border-radius: 3px;
+            padding: 20px 20px;
+            border-color: black;
+            display: block;
+            font-family: sans-serif;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        section input:hover {
+            border-color: blue;
+        }
+
+        section div {
+            width: 60%;
+
+        }
+
+        .a1 {
+            color: black;
+            text-decoration: none;
+        }
+
+        .a2 {
+            color: black;
+            text-decoration: none;
+        }
+
+        .a1:hover {
+            color: #4C5FD5;
+            text-decoration: underline;
+        }
+
+        .a2:hover {
+            color: #191a1b;
+            text-decoration: underline;
+        }
+
+        .div1 {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 86%;
+            margin-left: 7%;
+            /* height: auto; */
+            /* border: 1px solid black; */
+            /* gap: 20px; */
+        }
+
+        .div2 {
+            /* border: 1px solid black; */
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+
+        .div3 {
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-left: 7%;
+        }
+
+        .div4 {
+
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+
+        .div2 h1 {
+            font-size: 45px;
+            color: #191a1b;
+            margin-left: 30px;
+        }
+
+        .div3 h1 {
+            font-size: 45px;
+            color: #191a1b;
+            margin-left: 30px;
+        }
+
+        .div4 h1 {
+            font-size: 45px;
+            color: #191a1b;
+            margin-left: 30px;
+        }
+
+        ul {
+            /* border: 1px solid black; */
+            margin-left: 10%;
+            margin-top: 50px;
+            line-height: 40px;
+            color: #191a1b;
+            font-size: 20px;
+        }
+
+        .div4 ul {
+            /* border: 1px solid black; */
+            margin-left: 8%;
+            margin-top: 10px;
+            line-height: 40px;
+            color: #191a1b;
+            font-size: 20px;
+        }
+
+        .div4 dl {
+            /* border: 1px solid black; */
+            margin-left: 5%;
+            margin-top: 40px;
+            line-height: 40px;
+            color: #191a1b;
+            font-size: 20px;
+        }
+
+        .a2 {
+            color: #191a1b;
+            text-transform: capitalize;
+        }
+
+        .a3 {
+            color: #4C5FD5;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 5%;
+
+
+
+        }
+
+        .a3:hover {
+            text-decoration: underline;
+        }
+        .a5 {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .a5:hover {
+            text-decoration: underline;
+            
+        }
+       
+
+        .div6 {
+            height:auto;
+            width: 100%;
+            margin-top: 20%;
+            margin-left: 30%;
+            font-size: 10px;
+            color: rgb(242, 242, 249);
+            margin-bottom: 50px;
+        }
+
+        .log-sec {
+            color: white;
+            padding-top: 300px;
+            line-height: 30px;
+            font-size: 15px;
+        }
+        .div5 {
+            width: 100%;
+            background-color: black;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+            color: white;
+            line-height: 30px;
+            margin-top: 10%;
+        }
+        .div6 h4{
+            color: rgb(56, 54, 54);
+        }
+        
+         
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="divl">
+            <h1>Abstract | Help centre</h1>
+        </div>
+        <div class="divr">
+            <input type="text" placeholder="search">
+            <button class="btn1">submit a request</button>
+            <button class="btn2">sign in </button>
+        </div>
+    </nav>
+    <section class="section1">
+        <div>
+            <p><a href="" class="a1">Abstract</a> > Using Abstract</p>
+        </div>
+        <div style="font-size: 80px;">
+            <p>Using Abstract</p>
+        </div>
+        <p style="font-size: 25px;">Abstract lets you manage, version, and document your designs in one place.</p>
+    </section>
+    <section class="div1">
+        <div class="div2">
+            <h1>Get started in Abstract</h1>
+
+            <ul>
+                <li><a href="" class="a2"> Try out abstract</a></li>
+                <li><a href="" class="a2"> The abstract design workflow</a></li>
+                <li><a href="" class="a2"> start working in abstract</a></li>
+                <li><a href="" class="a2">practice abstract workflow</a></li>
+                <li><a href="" class="a2">glossory</a></li>
+            </ul>
+
+        </div>
+
+        <div class="div2">
+            <h1>Using the Abstract Desktop App</h1>
+
+            <ul>
+                <li><a href="" class="a2">update to the newset version of abstract</a></li>
+                <li><a href="" class="a2">backing up your work in abstract</a></li>
+                <li><a href="" class="a2">system requirements</a></li>
+                <li><a href="" class="a2">downloading the abstract desktop application</a></li>
+                <li><a href="" class="a2">the abstract plugin</a></li>
+                <li><a href="" class="a2">keyboard shortcuts</a></li>
+            </ul>
+            <a href="" class="a3">See all 13 articles</a>
+
+        </div>
+        <div class="div2">
+            <h1>Working in Projects</h1>
+
+            <ul>
+                <li><a href="" class="a2"> name your project</a></li>
+                <li><a href="" class="a2"> add files to your project</a></li>
+                <li><a href="" class="a2"> create a branch</a></li>
+                <li><a href="" class="a2"> open untracked vs. creating a branch</a></li>
+                <li><a href="" class="a2"> change branch status</a></li>
+                <li><a href="" class="a2"> rename a branch</a></li>
+            </ul>
+            <a href="" class="a3">See all 10 articles</a>
+
+        </div>
+        <div class="div2">
+            <h1>Commit Your Work</h1>
+
+            <ul>
+                <li><a href="" class="a2">a guide to commits</a></li>
+                <li><a href="" class="a2"> committing changes in branch</a></li>
+                <li><a href="" class="a2"> commit history</a></li>
+                <li><a href="" class="a2">troubleshoot your commits</a></li>
+            </ul>
+
+        </div>
+        <div class="div2">
+            <h1>Merge your work</h1>
+
+            <ul>
+                <li><a href="" class="a2">A Guide to Merging </a></li>
+                <li><a href="" class="a2">Merging to the main branch </a></li>
+                <li><a href="" class="a2"> Resolve conflicts</a></li>
+                <li><a href="" class="a2"> Restore to previous commit</a></li>
+                <li><a href="" class="a2"> Merge restrictions </a></li>
+            </ul>
+
+        </div>
+        <div class="div2">
+            <h1>Work with libraries</h1>
+            <ul>
+                <li><a href="" class="a2"> Libraries Overview</a></li>
+                <li><a href="" class="a2"> Add a Library</a></li>
+                <li><a href="" class="a2"> Link a library</a></li>
+                <li><a href="" class="a2"> Update a library </a></li>
+                <li><a href="" class="a2">Work with dependencies</a></li>
+                <li><a href="" class="a2">Manage your libraries</a></li>
+            </ul>
+
+        </div>
+        <div class="div2">
+            <h1>Collaborate in projects</h1>
+
+            <ul>
+                <li><a href="" class="a2"> Share your designs </a></li>
+                <li><a href="" class="a2">Request a design review</a></li>
+                <li><a href="" class="a2"> Use collections</a></li>
+                <li><a href="" class="a2"> Sections within collections </a></li>
+                <li><a href="" class="a2">Leave comments and annotations</a></li>
+                <li><a href="" class="a2">Assets</a></li>
+            </ul>
+            <a href="" class="a3">See all 8 articles</a>
+
+        </div>
+
+        <div class="div2">
+            <h1>Troubleshooting Abstract</h1>
+
+            <ul>
+                <li><a href="" class="a2">General Troubleshooting </a></li>
+                <li><a href="" class="a2">Troubleshoot sync errors </a></li>
+                <li><a href="" class="a2"> Resolve a pending commit</a></li>
+                <li><a href="" class="a2"> Resolve diverged branches </a></li>
+                <li><a href="" class="a2">Previews and asset generation</a></li>
+                <li><a href="" class="a2">Sync library components in Sketch</a></li>
+            </ul>
+            <a href="" class="a3">See all 11 articles</a>
+
+        </div>
+
+    </section>
+    <section class="div3">
+        <h1>Abstract Best Practices</h1>
+        <div class="div4">
+            <dl>
+                <dt>
+                    <h2>Main</h2>
+                </dt>
+            </dl>
+            <ul>
+                <li><a href="" class="a2">Define the main branch</a></li>
+            </ul>
+
+        </div>
+        <div class="div4">
+            <dl>
+                <dt>
+                    <h2>Branching</h2>
+                </dt>
+            </dl>
+            <ul>
+                <li><a href="" class="a2">Set up a new branch </a></li>
+                <li><a href="" class="a2">Working in a branch</a></li>
+                <li><a href="" class="a2">Prepare your branch for merging</a></li>
+            </ul>
+        </div>
+        <div class="div4">
+            <dl>
+                <dt>
+                    <h2>Committing</h2>
+                </dt>
+            </dl>
+            <ul>
+                <li><a href="" class="a2">When to commit </a></li>
+                <li><a href="" class="a2">Committing — Part 2</a></li>
+            </ul>
+        </div>
+        <div class="div4">
+            <dl>
+                <dt>
+                    <h2>Merging</h2>
+                </dt>
+            </dl>
+            <ul>
+                <li><a href="" class="a2"> Update from the main branch before merging</a></li>
+                <li><a href="" class="a2">Resolve merge conflicts</a></li>
+                <li><a href="" class="a2">Clean up your branch before merging</a></li>
+            </ul>
+        </div>
+        <div class="div4">
+            <dl>
+                <dt>
+                    <h2>Design systems</h2>
+                </dt>
+            </dl>
+            <ul>
+                <li><a href="" class="a2">Libraries</a></li>
+            </ul>
+
+        </div>
+    </section>
+    <section >
+        <div class="div5">
+            <div class="div6">
+                <h4 style="font-size: 28px;">Abstract</h4>
+                <dl>
+                    <dt><a href="" class="a5">Start Trial</a></dt>
+                    <dt><a href="" class="a5">Pricing</a> </dt>
+                    <dt><a href="" class="a5"> Download</a></dt>
+                </dl>
+            </div>
+            <div class="div6">
+                <h4 style="font-size: 28px;">Resources</h4>
+                <dl>
+                    <dt><a href="" class="a5"> Blog</a></dt>
+                    <dt><a href="" class="a5"> Help Center</a></dt>
+                    <dt><a href="" class="a5"> Release Notes</a></dt>
+                    <dt><a href="" class="a5">Status</a></dt>
+                </dl>
+            </div>
+            <div class="div6">
+                <h4 style="font-size: 28px;">Community</h4>
+                <dl>
+                    <dt><a href="" class="a5">Twitter</a></dt>
+                    <dt><a href="" class="a5">LinkedIn</a></dt>
+                    <dt><a href="" class="a5">Facebook</a></dt>
+                    <dt><a href="" class="a5">Dribbble</a></dt>
+                    <dt><a href="" class="a5">Podcast</a></dt>
+                </dl>
+            </div>
+            <div class="div6">
+                <h4 style="font-size: 28px;">Company</h4>
+
+                <dl>
+                    <dt><a href="" class="a5">About Us</a></dt>
+                    <dt><a href="" class="a5">Careers</a></dt>
+                    <dt><a href="" class="a5">Legal</a></dt>
+                </dl>
+
+            </div>
+            <div class="log-sec">
+                <h2>
+                    <dl>
+                        <dt>© Copyright 2025</dt>
+
+                        <dt>Abstract Studio Design, Inc.</dt>
+
+                        <dt>All rights reserved</dt>
+                </h2>
+                </dl>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
