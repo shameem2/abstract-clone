@@ -266,6 +266,23 @@
          margin-left: 0px;
          padding-top: 20px;
      }
+      .div4 {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         height: auto;
+     }
+
+     .section3 {
+         height: auto;
+     }
+
+     .div3 {
+         width: 100%;
+     }
+
+     .log-sec {
+         padding-top: 50px;
+     }
 
  }
 
